@@ -35,6 +35,65 @@ const questions = [
             { text: "honk the horn", correct: false },
         ]
     },
+    {
+        question : "A flashing red traffic light signifies that a driver should do what?",
+        answers : [
+            { text: "stop", correct: true },
+            { text: "speed up", correct: false },
+            { text: "proceed with caution", correct: false },
+            { text: "honk the horn", correct: false },
+        ]
+    },
+
+    {
+        question : "A flashing red traffic light signifies that a driver should do what?",
+        answers : [
+            { text: "stop", correct: true },
+            { text: "speed up", correct: false },
+            { text: "proceed with caution", correct: false },
+            { text: "honk the horn", correct: false },
+        ]
+    },
+
+    {
+        question : "A flashing red traffic light signifies that a driver should do what?",
+        answers : [
+            { text: "stop", correct: true },
+            { text: "speed up", correct: false },
+            { text: "proceed with caution", correct: false },
+            { text: "honk the horn", correct: false },
+        ]
+    },
+
+    {
+        question : "A flashing red traffic light signifies that a driver should do what?",
+        answers : [
+            { text: "stop", correct: true },
+            { text: "speed up", correct: false },
+            { text: "proceed with caution", correct: false },
+            { text: "honk the horn", correct: false },
+        ]
+    },
+
+    {
+        question : "A flashing red traffic light signifies that a driver should do what?",
+        answers : [
+            { text: "stop", correct: true },
+            { text: "speed up", correct: false },
+            { text: "proceed with caution", correct: false },
+            { text: "honk the horn", correct: false },
+        ]
+    },
+
+    {
+        question : "A flashing red traffic light signifies that a driver should do what?",
+        answers : [
+            { text: "stop", correct: true },
+            { text: "speed up", correct: false },
+            { text: "proceed with caution", correct: false },
+            { text: "honk the horn", correct: false },
+        ]
+    },
 
 ];
 
@@ -53,9 +112,7 @@ function startQuiz() {
 }
 
 function showQuestion() {
-
     resetState();
-
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo =  currentQuestionIndex + 1;
     questionElemant.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -65,8 +122,11 @@ function showQuestion() {
         button.innerHTML = x.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
+        if (x.correct) {
+            button.dataset.correct = x.correct;
+        }
         button.addEventListener("click", selectAnswer);
-    })
+    });
 }
 
 function resetState() {

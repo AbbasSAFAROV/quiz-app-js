@@ -75,9 +75,9 @@ body {
 }
 
 .correct {
-    color: #9aeabc;
+    background: #9aeabc;
 }
 
 .incorrect {
-    color: #ff9393;
+    background: #ff9393;
 }
