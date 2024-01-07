@@ -105,6 +105,16 @@ const questions = [
         ]
     },
 
+    {
+        question : "A flashing red traffic light signifies that a driver should do what?",
+        answers : [
+            { text: "stop", correct: true },
+            { text: "speed up", correct: false },
+            { text: "proceed with caution", correct: false },
+            { text: "honk the horn", correct: false },
+        ]
+    },
+
 ];
 
 const questionElemant = document.getElementById("question");
